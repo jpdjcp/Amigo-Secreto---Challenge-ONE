@@ -13,7 +13,7 @@ function agregarAmigo() {
 function sortearAmigo() {
     let indiceRandom = generarIndiceRandom();
     let nombreSorteado = listaAmigos[indiceRandom];
-    asignarTextoElementoHTML("", nombreSorteado); // implementar
+    asignarTextoElementoHTML("resultado", nombreSorteado);
 }
 
 function esValido(nombre) {
@@ -22,4 +22,9 @@ function esValido(nombre) {
 
 function generarIndiceRandom() {
     return Math.floor(Math.random()*listaAmigos.length);
+}
+
+function asignarTextoElementoHTML(elemento, texto) {
+    let elementoHTML = document.getElementById(elemento);
+    elementoHTML.innerHTML = texto;
 }
