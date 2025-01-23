@@ -1,5 +1,7 @@
-function agregarAmigo() {
+let listaAmigos = [];
 
+function agregarAmigo() {
+    
 }
 
 function sortearAmigo() {
