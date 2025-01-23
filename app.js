@@ -2,22 +2,24 @@ let listaAmigos = [];
 
 function agregarAmigo() {
     let nombreAmigo = document.getElementById("amigo").value;
-
     if (esValido(nombreAmigo)) {
         listaAmigos.push(nombreAmigo);
+        console.log(`Lista de amigos: ${listaAmigos}`);
     } else {
         alert("Debe ingresar un nombre");
     }
 }
 
 function sortearAmigo() {
-    let indiceRandom = generarIndiceRandom(); // implementar
-    console.log(listaAmigos[indiceRandom]); // borrar
+    let indiceRandom = generarIndiceRandom();
     let nombreSorteado = listaAmigos[indiceRandom];
-    console.log(listaAmigos[indiceRandom]); // borrar
     asignarTextoElementoHTML("", nombreSorteado); // implementar
 }
 
 function esValido(nombre) {
     return !(nombre === "");
+}
+
+function generarIndiceRandom() {
+    return Math.floor(Math.random()*listaAmigos.length);
 }
