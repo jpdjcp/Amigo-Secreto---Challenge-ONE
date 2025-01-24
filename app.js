@@ -4,11 +4,18 @@ function agregarAmigo() {
     let nombreAmigo = document.getElementById("amigo").value;
     if (esValido(nombreAmigo)) {
         listaAmigos.push(nombreAmigo);
+        mostrarEnListaHTML(nombreAmigo);
         console.log(`Lista de amigos: ${listaAmigos}`);
     } else {
         alert("Debe ingresar un nombre");
     }
-    limpiarInput();
+    limpiarInput();  
+}
+
+function mostrarEnListaHTML(nombre) {
+    let elementoLista = document.createElement("li");
+    elementoLista.innerHTML = nombre;
+    document.getElementById("listaAmigos").appendChild(elementoLista);
 }
 
 function sortearAmigo() {
