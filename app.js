@@ -8,6 +8,7 @@ function agregarAmigo() {
     } else {
         alert("Debe ingresar un nombre");
     }
+    // limpiarInput() a implementar
 }
 
 function sortearAmigo() {
