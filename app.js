@@ -8,7 +8,7 @@ function agregarAmigo() {
     } else {
         alert("Debe ingresar un nombre");
     }
-    // limpiarInput() a implementar
+    limpiarInput();
 }
 
 function sortearAmigo() {
@@ -28,4 +28,8 @@ function generarIndiceRandom() {
 function asignarTextoElementoHTML(elemento, texto) {
     let elementoHTML = document.getElementById(elemento);
     elementoHTML.innerHTML = texto;
+}
+
+function limpiarInput() {
+    document.getElementById("amigo").value = "";
 }
