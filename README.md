@@ -38,7 +38,7 @@ Los nombres irán apareciendo en la lista
 
 ![botón sortear amigo](<boton sortear.png>)
 
-5. el nombre sorteado aleatoriamente aparecerá en verde
+5. El nombre sorteado aleatoriamente aparecerá en verde
 
 ![nombre sorteado](<nombre sorteado.png>)
 
@@ -55,6 +55,7 @@ Equipo de Alura Latam
 
 ## Personas Desarrolladoras del Proyecto
 Marcelo Palacios
+
 [GitHub](https://github.com/jpdjcp)
 
 ## Licencia
