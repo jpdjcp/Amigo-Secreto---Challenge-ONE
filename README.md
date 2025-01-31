@@ -20,7 +20,7 @@ Este es un programa para sortear un amigo imaginario. Se introducen nombres de a
 Finalizado.
 
 ## Instrucciones
-1. Escriba el nombre de un amigo en el campo de texto
+1. Escriba el nombre de un amigo en el campo de texto (no se aceptan nombres vacíos ni repetidos)
 
 ![campo de texto](<campo de texto.png>)
 
