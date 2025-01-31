@@ -2,14 +2,20 @@ let listaAmigos = [];
 
 function agregarAmigo() {
     let nombreAmigo = document.getElementById("amigo").value;
-    if (esValido(nombreAmigo)) {
+    if (nombreAmigo === "") {
+        alert("Debe ingresar un nombre");
+        return;
+    } else if (listaAmigos.includes(nombreAmigo)) {
+        alert("No puede repetir nombres");
+        limpiarInput();
+        return;
+    } else {
         listaAmigos.push(nombreAmigo);
         mostrarEnListaHTML(nombreAmigo);
         console.log(`Lista de amigos: ${listaAmigos}`);
-    } else {
-        alert("Debe ingresar un nombre");
+        limpiarInput();
+        return;
     }
-    limpiarInput();  
 }
 
 function mostrarEnListaHTML(nombre) {
@@ -22,10 +28,6 @@ function sortearAmigo() {
     let indiceRandom = generarIndiceRandom();
     let nombreSorteado = listaAmigos[indiceRandom];
     asignarTextoElementoHTML("resultado", nombreSorteado);
-}
-
-function esValido(nombre) {
-    return !(nombre === "");
 }
 
 function generarIndiceRandom() {
